@@ -138,9 +138,10 @@ export interface WebviewLeafletMessage {
 }
 
 export interface OwnPositionMarker {
-  animation: MapMarkerAnimation;
+  animation?: MapMarkerAnimation;
   id?: string;
   icon: string;
   position: LatLng;
   size: Point;
+  iconAnchor?: Point;
 }
